@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+
+.christmas-image-box {
+    position: absolute;
+    width: 772px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-image: url('./image/image_processing20201223-30504-1eel1xg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.christmas-countdown {
+    position: absolute;
+    width: 518px;
+    height: 100vh;
+    left: 762px;
+    top: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: hsl(244, 42%, 7%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.christmas-countdown h1 {
+    font-size: 45px;
+    line-height: 55px;
+    padding-top: 2em;
+}
+
+.christmas-countdown h2 {
+    padding-top: 1.5em;
+} 
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+.time h2 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+
+.attribute {
+    color: #ffff;
+    bottom: 0%;
+    position: fixed;
+}
+
+.attribute a {
+    text-decoration: none;
+    color: rgb(237, 240, 49);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .christmas-image-box {
+        width: 430px;
+        height: 50vh;
+        left: -6px;
+        top: 0px;
+    }
+
+    .christmas-countdown {
+        width: 430px;
+        height: 50vh;
+        left: 0px;
+        top: 447px;
+        overflow: hidden;
+    }
+
+    .christmas-countdown h1 {
+        font-size: 20px;
+    }
+
+    .time h2 {
+        font-weight: bold;
+        font-size: 10px;
+        }
+
+    .time small {
+        font-size: 10px;
+    }
+
+    .christmas-countdown h2 {
+        padding-top: 2.5em;
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    
+}
